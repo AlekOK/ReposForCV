@@ -54,37 +54,37 @@ def openFile():
             else:
                 pass
     except FileNotFoundError:
-        print('[{}] Танос: Sorry but I can not open this file'.format(time))
+        print('[{}] Sirius: Sorry but I can not open this file'.format(time))
         engine.say('Sorry but I can not open this file')
         engine.runAndWait()
 
 def silent():
     try:   
-        print('[{}] Танос: Please say something my master'.format(time))
+        print('[{}] Sirius: Please say something my master'.format(time))
         engine.say('Please say something my master')
         engine.runAndWait()
     except sr.UnknownValueError:
-        print('[{}] Танос: Please say something my master'.format(time))
+        print('[{}] Sirius: Please say something my master'.format(time))
         engine.say('Please say something my master')
         engine.runAndWait()
 
 def sayTime():
     try:   
-        print('[{0}] Танос: Time is {0}'.format(time))
+        print('[{0}] Sirius: Time is {0}'.format(time))
         engine.say('Time is {}'.format(time))
         engine.runAndWait()
     except sr.UnknownValueError:
-        print('[{}] Танос: Please say something my master'.format(time))
+        print('[{}] Sirius: Please say something my master'.format(time))
         engine.say('Please say something my master')
         engine.runAndWait()
 
 def iListen():
     try:   
-        print('[{0}] Танос: Yes my master, I listen!'.format(time))
+        print('[{0}] Sirius: Yes my master, I listen!'.format(time))
         engine.say('Yes my master, I listen!')
         engine.runAndWait()
     except sr.UnknownValueError:
-        print('[{0}] Танос: Yes, my master. I listen!'.format(time))
+        print('[{0}] Sirius: Yes, my master. I listen!'.format(time))
         engine.say('Yes, my master. I listen!')
         engine.runAndWait()
 
@@ -110,13 +110,13 @@ def lookingForFolder():
         else: pass  
 
 # def soundMin():
-#     print('[{}] Танос: Sound is minimal'.format(time))
+#     print('[{}] Sirius: Sound is minimal'.format(time))
 #     engine.say('Sound is minimal')
 #     engine.runAndWait()
 #     sound.volume_set(30)
 
 # def soundMax():
-#     print('[{}] Танос: Sound is maximal'.format(time))
+#     print('[{}] Sirius: Sound is maximal'.format(time))
 #     engine.say('Sound is maximal')
 #     engine.runAndWait()
 #     sound.volume_max()
@@ -179,7 +179,7 @@ while True:
             openFile()
 
         elif voice == "поиск":
-            print('[{}] Танос: What are you looking for?'.format(time))
+            print('[{}]Sirius: What are you looking for?'.format(time))
             engine.say('What are you looking for? And could you write this in the comand block?')
             engine.runAndWait()
 
@@ -203,4 +203,4 @@ while True:
         else:
             pass# print('[{}] Танос: Sorry but I did click'.format(time))
     except sr.UnknownValueError:
-        print('[{}] Танос: Голос не Розпознано!'.format(time))
+        print('[{}] Sirius: Голос не Розпознано!'.format(time))
